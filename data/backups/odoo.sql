@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict W4IcQ1HdSGK0ubkAMb3Uhxqci2fVKVoifPRt78tyPUKXwH0rkteLaYZWcRWLIVe
+\restrict mfkT0XJoGxHvs7GuqdmCzl969NLfpZMMEZ43ypMMNqEHrv98GYgYMpRIPK5z7qE
 
 -- Dumped from database version 16.16 (Debian 16.16-1.pgdg13+1)
 -- Dumped by pg_dump version 16.16 (Debian 16.16-1.pgdg13+1)
@@ -13265,8 +13265,6 @@ COPY public.base_partner_merge_line (id, wizard_id, min_id, create_uid, write_ui
 --
 
 COPY public.bus_bus (id, create_uid, write_uid, channel, message, create_date, write_date) FROM stdin;
-1	2	2	["odoo","broadcast"]	{"type":"bundle_changed","payload":{"server_version":"19.0-20261112"}}	2026-11-13 12:58:23.770622	2026-11-13 12:58:23.770622
-2	2	2	["odoo","broadcast"]	{"type":"bundle_changed","payload":{"server_version":"19.0-20261112"}}	2026-11-13 12:58:23.789992	2026-11-13 12:58:23.789992
 \.
 
 
@@ -13283,6 +13281,7 @@ COPY public.change_password_own (id, create_uid, write_uid, new_password, confir
 --
 
 COPY public.change_password_user (id, wizard_id, user_id, create_uid, write_uid, user_login, new_passwd, create_date, write_date) FROM stdin;
+1	1	5	2	2	s.reymartinez@edu.gva.es	\N	2026-11-17 07:39:59.339548	2026-11-17 07:39:59.376282
 \.
 
 
@@ -13291,6 +13290,7 @@ COPY public.change_password_user (id, wizard_id, user_id, create_uid, write_uid,
 --
 
 COPY public.change_password_wizard (id, create_uid, write_uid, create_date, write_date) FROM stdin;
+1	2	2	2026-11-17 07:39:59.339548	2026-11-17 07:39:59.339548
 \.
 
 
@@ -13621,8 +13621,8 @@ COPY public.ir_config_parameter (id, create_uid, write_uid, key, value, create_d
 --
 
 COPY public.ir_cron (id, ir_actions_server_id, user_id, interval_number, priority, failure_count, create_uid, write_uid, cron_name, interval_type, active, nextcall, lastcall, first_failure_date, create_date, write_date) FROM stdin;
-2	36	1	1	8	0	1	1	Base: Portal Users Deletion	days	t	2026-11-14 12:58:14	2026-11-13 12:58:54	\N	2026-11-13 12:58:07.84609	2026-11-13 12:58:07.84609
-1	35	1	1	3	0	1	1	Base: Auto-vacuum internal data	days	t	2026-11-14 12:58:14	2026-11-13 12:59:54	\N	2026-11-13 12:58:07.84609	2026-11-13 12:58:07.84609
+1	35	1	1	3	0	1	1	Base: Auto-vacuum internal data	days	t	2026-11-17 12:58:14	2026-11-17 07:13:58	\N	2026-11-13 12:58:07.84609	2026-11-13 12:58:07.84609
+2	36	1	1	8	0	1	1	Base: Portal Users Deletion	days	t	2026-11-17 12:58:14	2026-11-17 07:13:58	\N	2026-11-13 12:58:07.84609	2026-11-13 12:58:07.84609
 \.
 
 
@@ -13631,9 +13631,11 @@ COPY public.ir_cron (id, ir_actions_server_id, user_id, interval_number, priorit
 --
 
 COPY public.ir_cron_progress (id, cron_id, remaining, done, timed_out_counter, create_uid, write_uid, deactivate, create_date, write_date) FROM stdin;
+34	1	0	0	0	1	1	\N	2026-11-17 07:13:58.140781	2026-11-17 07:13:58.300464
 3	1	0	0	0	1	1	\N	2026-11-13 12:59:54.147188	2026-11-13 12:59:54.298904
 1	1	0	0	0	1	1	\N	2026-11-13 12:58:53.879536	2026-11-13 12:58:54.051207
 2	2	0	0	0	1	1	\N	2026-11-13 12:58:54.059398	2026-11-13 12:58:54.068286
+35	2	0	0	0	1	1	\N	2026-11-17 07:13:58.30827	2026-11-17 07:13:58.316409
 \.
 
 
@@ -27452,6 +27454,7 @@ COPY public.orm_signaling_assets (id, date) FROM stdin;
 COPY public.orm_signaling_default (id, date) FROM stdin;
 1	2026-11-13 12:58:07.81522
 2	2026-11-13 12:59:19.390932
+34	2026-11-17 07:39:59.734633
 \.
 
 
@@ -27589,9 +27592,7 @@ COPY public.res_config (id, create_uid, write_uid, create_date, write_date) FROM
 --
 
 COPY public.res_config_settings (id, create_uid, write_uid, create_date, write_date, web_app_name, company_id, module_base_import, module_google_calendar, module_microsoft_calendar, module_mail_plugin, module_auth_oauth, module_auth_ldap, module_account_inter_company_rules, module_voip, module_web_unsplash, module_sms, module_partner_autocomplete, module_base_geolocalize, module_google_recaptcha, module_website_cf_turnstile, module_google_address_autocomplete, group_multi_currency, show_effect, profiling_enabled_until, unsplash_access_key, unsplash_app_id) FROM stdin;
-1	2	2	2026-11-13 12:58:41.016117	2026-11-13 12:58:41.016117	\N	1	t	f	f	f	f	f	\N	f	t	f	f	f	f	f	f	t	t	\N	\N	\N
-2	2	2	2026-11-13 12:58:55.233519	2026-11-13 12:58:55.233519	\N	1	t	f	f	f	f	f	\N	f	t	f	f	f	f	f	f	t	t	\N	\N	\N
-3	2	2	2026-11-13 12:59:23.199409	2026-11-13 12:59:23.199409	\N	1	t	f	f	f	f	f	\N	f	t	f	f	f	f	f	f	t	t	\N	\N	\N
+34	2	2	2026-11-17 07:39:28.719397	2026-11-17 07:39:28.719397	\N	1	t	f	f	f	f	f	\N	f	t	f	f	f	f	f	f	t	t	\N	\N	\N
 \.
 
 
@@ -30353,7 +30354,7 @@ COPY public.res_currency_rate (id, currency_id, company_id, create_uid, write_ui
 --
 
 COPY public.res_device_log (id, user_id, create_uid, write_uid, session_identifier, platform, browser, ip_address, country, city, device_type, revoked, first_activity, last_activity, create_date, write_date) FROM stdin;
-1	2	\N	\N	bW5xzg7rqJ2EaqUXmZDvkNFGJMXTYBhNokOdYGbhWM	windows	chrome	172.22.0.1	\N	\N	computer	f	2026-11-13 12:58:22	2026-11-13 12:58:22	\N	\N
+34	2	\N	\N	bW5xzg7rqJ2EaqUXmZDvkNFGJMXTYBhNokOdYGbhWM	windows	chrome	172.22.0.1	\N	\N	computer	f	2026-11-13 12:58:22	2026-11-17 07:13:49	\N	\N
 \.
 
 
@@ -30614,7 +30615,7 @@ COPY public.res_users (id, company_id, partner_id, active, create_date, login, p
 3	1	4	f	2026-11-13 12:58:07.84609	public	$pbkdf2-sha512$600000$rrXWGgOglFKKsVbKmXNurQ$hvglcZ0bNrBq4LewPi65pbEzIyoimNBUEsDw./jA/qJ.HH8PF/ctn1x5h3jdQ1WuHIfJpwKL3nSfGlUIVEKoHw	\N	1	1	<div>Public user</div>	t	2026-11-13 12:58:19.40293	\N	\N	f
 4	1	5	f	2026-11-13 12:58:07.84609	portaltemplate	\N	\N	1	1		t	2026-11-13 12:58:19.40293	\N	\N	f
 2	1	3	t	2026-11-13 12:58:07.84609	gonburcaz@alu.edu.gva.es	$pbkdf2-sha512$600000$ldK6NwYghBCCEGKsdU5JqQ$NKzIq9w4BChG5RDpH4sPP9DcQwOEfEPlwblBipBd3CSu8YwvF6AtVitHnkx9iJxdOc1Xnil4X.J/PGaiuL46cA	\N	1	2	<div>Administrator</div>	f	2026-11-13 12:58:53.791546	\N	\N	t
-5	1	6	t	2026-11-13 12:59:14.697113	s.reymartinez@edu.gva.es	\N	\N	2	2	<div>Sergio Rey</div>	f	2026-11-13 12:59:19.319203	\N	\N	f
+5	1	6	t	2026-11-13 12:59:14.697113	s.reymartinez@edu.gva.es	$pbkdf2-sha512$600000$LgWgdE7JmfO.t9a6V0oJAQ$.acpQS.dAKPXi52SxoEpBeed5araIHm/1tnrvwFYzUYaMa6g5aBVKn2oB2Ab4PsQGBvUgbBhocE0GfU9Zw8A4g	\N	2	2	<div>Sergio Rey</div>	f	2026-11-17 07:39:59.376282	\N	\N	f
 \.
 
 
@@ -30901,7 +30902,7 @@ SELECT pg_catalog.setval('public.base_partner_merge_line_id_seq', 1, false);
 -- Name: bus_bus_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.bus_bus_id_seq', 2, true);
+SELECT pg_catalog.setval('public.bus_bus_id_seq', 33, true);
 
 
 --
@@ -30915,14 +30916,14 @@ SELECT pg_catalog.setval('public.change_password_own_id_seq', 1, false);
 -- Name: change_password_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.change_password_user_id_seq', 1, false);
+SELECT pg_catalog.setval('public.change_password_user_id_seq', 1, true);
 
 
 --
 -- Name: change_password_wizard_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.change_password_wizard_id_seq', 1, false);
+SELECT pg_catalog.setval('public.change_password_wizard_id_seq', 1, true);
 
 
 --
@@ -30957,35 +30958,35 @@ SELECT pg_catalog.setval('public.iap_account_id_seq', 1, false);
 -- Name: iap_service_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.iap_service_id_seq', 1, true);
+SELECT pg_catalog.setval('public.iap_service_id_seq', 33, true);
 
 
 --
 -- Name: ir_act_window_view_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_act_window_view_id_seq', 14, true);
+SELECT pg_catalog.setval('public.ir_act_window_view_id_seq', 33, true);
 
 
 --
 -- Name: ir_actions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_actions_id_seq', 89, true);
+SELECT pg_catalog.setval('public.ir_actions_id_seq', 99, true);
 
 
 --
 -- Name: ir_actions_server_history_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_actions_server_history_id_seq', 7, true);
+SELECT pg_catalog.setval('public.ir_actions_server_history_id_seq', 33, true);
 
 
 --
 -- Name: ir_actions_todo_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_actions_todo_id_seq', 2, true);
+SELECT pg_catalog.setval('public.ir_actions_todo_id_seq', 33, true);
 
 
 --
@@ -30999,42 +31000,42 @@ SELECT pg_catalog.setval('public.ir_asset_id_seq', 1, false);
 -- Name: ir_attachment_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_attachment_id_seq', 22, true);
+SELECT pg_catalog.setval('public.ir_attachment_id_seq', 33, true);
 
 
 --
 -- Name: ir_config_parameter_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_config_parameter_id_seq', 9, true);
+SELECT pg_catalog.setval('public.ir_config_parameter_id_seq', 33, true);
 
 
 --
 -- Name: ir_cron_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_cron_id_seq', 2, true);
+SELECT pg_catalog.setval('public.ir_cron_id_seq', 33, true);
 
 
 --
 -- Name: ir_cron_progress_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_cron_progress_id_seq', 3, true);
+SELECT pg_catalog.setval('public.ir_cron_progress_id_seq', 35, true);
 
 
 --
 -- Name: ir_cron_trigger_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_cron_trigger_id_seq', 1, true);
+SELECT pg_catalog.setval('public.ir_cron_trigger_id_seq', 33, true);
 
 
 --
 -- Name: ir_default_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_default_id_seq', 1, true);
+SELECT pg_catalog.setval('public.ir_default_id_seq', 33, true);
 
 
 --
@@ -31104,70 +31105,70 @@ SELECT pg_catalog.setval('public.ir_mail_server_id_seq', 1, false);
 -- Name: ir_model_access_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_model_access_id_seq', 171, true);
+SELECT pg_catalog.setval('public.ir_model_access_id_seq', 198, true);
 
 
 --
 -- Name: ir_model_constraint_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_model_constraint_id_seq', 414, true);
+SELECT pg_catalog.setval('public.ir_model_constraint_id_seq', 429, true);
 
 
 --
 -- Name: ir_model_data_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_model_data_id_seq', 10245, true);
+SELECT pg_catalog.setval('public.ir_model_data_id_seq', 10263, true);
 
 
 --
 -- Name: ir_model_fields_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_model_fields_id_seq', 1831, true);
+SELECT pg_catalog.setval('public.ir_model_fields_id_seq', 1848, true);
 
 
 --
 -- Name: ir_model_fields_selection_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_model_fields_selection_id_seq', 769, true);
+SELECT pg_catalog.setval('public.ir_model_fields_selection_id_seq', 792, true);
 
 
 --
 -- Name: ir_model_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_model_id_seq', 148, true);
+SELECT pg_catalog.setval('public.ir_model_id_seq', 165, true);
 
 
 --
 -- Name: ir_model_inherit_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_model_inherit_id_seq', 46, true);
+SELECT pg_catalog.setval('public.ir_model_inherit_id_seq', 66, true);
 
 
 --
 -- Name: ir_model_relation_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_model_relation_id_seq', 23, true);
+SELECT pg_catalog.setval('public.ir_model_relation_id_seq', 33, true);
 
 
 --
 -- Name: ir_module_category_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_module_category_id_seq', 97, true);
+SELECT pg_catalog.setval('public.ir_module_category_id_seq', 99, true);
 
 
 --
 -- Name: ir_module_module_dependency_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_module_module_dependency_id_seq', 1492, true);
+SELECT pg_catalog.setval('public.ir_module_module_dependency_id_seq', 1518, true);
 
 
 --
@@ -31181,7 +31182,7 @@ SELECT pg_catalog.setval('public.ir_module_module_exclusion_id_seq', 1, false);
 -- Name: ir_module_module_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_module_module_id_seq', 719, true);
+SELECT pg_catalog.setval('public.ir_module_module_id_seq', 726, true);
 
 
 --
@@ -31195,7 +31196,7 @@ SELECT pg_catalog.setval('public.ir_profile_id_seq', 1, false);
 -- Name: ir_rule_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_rule_id_seq', 43, true);
+SELECT pg_catalog.setval('public.ir_rule_id_seq', 66, true);
 
 
 --
@@ -31216,7 +31217,7 @@ SELECT pg_catalog.setval('public.ir_sequence_id_seq', 1, false);
 -- Name: ir_ui_menu_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_ui_menu_id_seq', 71, true);
+SELECT pg_catalog.setval('public.ir_ui_menu_id_seq', 99, true);
 
 
 --
@@ -31230,84 +31231,84 @@ SELECT pg_catalog.setval('public.ir_ui_view_custom_id_seq', 1, false);
 -- Name: ir_ui_view_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.ir_ui_view_id_seq', 252, true);
+SELECT pg_catalog.setval('public.ir_ui_view_id_seq', 264, true);
 
 
 --
 -- Name: orm_signaling_assets_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.orm_signaling_assets_id_seq', 1, true);
+SELECT pg_catalog.setval('public.orm_signaling_assets_id_seq', 33, true);
 
 
 --
 -- Name: orm_signaling_default_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.orm_signaling_default_id_seq', 2, true);
+SELECT pg_catalog.setval('public.orm_signaling_default_id_seq', 34, true);
 
 
 --
 -- Name: orm_signaling_groups_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.orm_signaling_groups_id_seq', 1, true);
+SELECT pg_catalog.setval('public.orm_signaling_groups_id_seq', 33, true);
 
 
 --
 -- Name: orm_signaling_registry_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.orm_signaling_registry_id_seq', 2, true);
+SELECT pg_catalog.setval('public.orm_signaling_registry_id_seq', 33, true);
 
 
 --
 -- Name: orm_signaling_routing_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.orm_signaling_routing_id_seq', 1, true);
+SELECT pg_catalog.setval('public.orm_signaling_routing_id_seq', 33, true);
 
 
 --
 -- Name: orm_signaling_stable_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.orm_signaling_stable_id_seq', 2, true);
+SELECT pg_catalog.setval('public.orm_signaling_stable_id_seq', 33, true);
 
 
 --
 -- Name: orm_signaling_templates_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.orm_signaling_templates_id_seq', 1, true);
+SELECT pg_catalog.setval('public.orm_signaling_templates_id_seq', 33, true);
 
 
 --
 -- Name: properties_base_definition_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.properties_base_definition_id_seq', 1, true);
+SELECT pg_catalog.setval('public.properties_base_definition_id_seq', 33, true);
 
 
 --
 -- Name: report_layout_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.report_layout_id_seq', 7, true);
+SELECT pg_catalog.setval('public.report_layout_id_seq', 33, true);
 
 
 --
 -- Name: report_paperformat_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.report_paperformat_id_seq', 3, true);
+SELECT pg_catalog.setval('public.report_paperformat_id_seq', 33, true);
 
 
 --
 -- Name: res_bank_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.res_bank_id_seq', 1, true);
+SELECT pg_catalog.setval('public.res_bank_id_seq', 33, true);
 
 
 --
@@ -31328,35 +31329,35 @@ SELECT pg_catalog.setval('public.res_config_id_seq', 1, false);
 -- Name: res_config_settings_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.res_config_settings_id_seq', 3, true);
+SELECT pg_catalog.setval('public.res_config_settings_id_seq', 34, true);
 
 
 --
 -- Name: res_country_group_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.res_country_group_id_seq', 8, true);
+SELECT pg_catalog.setval('public.res_country_group_id_seq', 33, true);
 
 
 --
 -- Name: res_country_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.res_country_id_seq', 251, true);
+SELECT pg_catalog.setval('public.res_country_id_seq', 264, true);
 
 
 --
 -- Name: res_country_state_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.res_country_state_id_seq', 2131, true);
+SELECT pg_catalog.setval('public.res_country_state_id_seq', 2145, true);
 
 
 --
 -- Name: res_currency_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.res_currency_id_seq', 170, true);
+SELECT pg_catalog.setval('public.res_currency_id_seq', 199, true);
 
 
 --
@@ -31370,28 +31371,28 @@ SELECT pg_catalog.setval('public.res_currency_rate_id_seq', 1, false);
 -- Name: res_device_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.res_device_log_id_seq', 1, true);
+SELECT pg_catalog.setval('public.res_device_log_id_seq', 34, true);
 
 
 --
 -- Name: res_groups_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.res_groups_id_seq', 13, true);
+SELECT pg_catalog.setval('public.res_groups_id_seq', 34, true);
 
 
 --
 -- Name: res_groups_privilege_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.res_groups_privilege_id_seq', 2, true);
+SELECT pg_catalog.setval('public.res_groups_privilege_id_seq', 33, true);
 
 
 --
 -- Name: res_lang_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.res_lang_id_seq', 93, true);
+SELECT pg_catalog.setval('public.res_lang_id_seq', 99, true);
 
 
 --
@@ -31412,14 +31413,14 @@ SELECT pg_catalog.setval('public.res_partner_category_id_seq', 1, false);
 -- Name: res_partner_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.res_partner_id_seq', 6, true);
+SELECT pg_catalog.setval('public.res_partner_id_seq', 34, true);
 
 
 --
 -- Name: res_partner_industry_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.res_partner_industry_id_seq', 21, true);
+SELECT pg_catalog.setval('public.res_partner_industry_id_seq', 33, true);
 
 
 --
@@ -31447,7 +31448,7 @@ SELECT pg_catalog.setval('public.res_users_deletion_id_seq', 1, false);
 -- Name: res_users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.res_users_id_seq', 5, true);
+SELECT pg_catalog.setval('public.res_users_id_seq', 34, true);
 
 
 --
@@ -31461,7 +31462,7 @@ SELECT pg_catalog.setval('public.res_users_identitycheck_id_seq', 1, false);
 -- Name: res_users_log_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.res_users_log_id_seq', 1, true);
+SELECT pg_catalog.setval('public.res_users_log_id_seq', 33, true);
 
 
 --
@@ -31475,7 +31476,7 @@ SELECT pg_catalog.setval('public.res_users_settings_embedded_action_id_seq', 1, 
 -- Name: res_users_settings_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.res_users_settings_id_seq', 2, true);
+SELECT pg_catalog.setval('public.res_users_settings_id_seq', 33, true);
 
 
 --
@@ -36830,5 +36831,5 @@ ALTER TABLE ONLY public.wizard_ir_model_menu_create
 -- PostgreSQL database dump complete
 --
 
-\unrestrict W4IcQ1HdSGK0ubkAMb3Uhxqci2fVKVoifPRt78tyPUKXwH0rkteLaYZWcRWLIVe
+\unrestrict mfkT0XJoGxHvs7GuqdmCzl969NLfpZMMEZ43ypMMNqEHrv98GYgYMpRIPK5z7qE
 
